@@ -232,7 +232,10 @@ div.logo-image {
 		margin-right: 20px;
 	}
 	div.slogan-upper {
-		justify-content: flex-start;
+		justify-content: center;
+	}
+	header div.slogan h1 {
+		font-size: 50px;
 	}
 }
 
