@@ -60,17 +60,18 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Index.html */
+/* Desktop first design principle */
 
 body {
-	width: 880px;
-	margin: 0px 200px 0px 200px;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .static-nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 880px;
+	width: 100%;
 	height: 90px;
 }
 
@@ -80,18 +81,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 
-	width: 600px;
+	width: 75%;
 	height: 70px;
-}
-
-
-header .static-nav {
-	margin-top: 40px;
-	width: 800px;
-}
-
-header .static-nav img {
-	margin-left: 70px;
 }
 
 
@@ -146,6 +137,11 @@ div.logo-image {
 	margin-right: 10px;
 	margin-bottom: 20px;
 	margin-top: 20px;
+}
+
+.middle-image img {
+	width: 100%;
+	height: 25%;
 }
 
 .lower {
