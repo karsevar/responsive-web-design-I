@@ -1,3 +1,404 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Index.html */
+/* Desktop first design principle */
+
+body {
+	max-width: 880px;
+	min-width: 300px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+button {
+	height: 30px;
+	width: 150px;
+	border: 1px solid grey;
+	background: white;
+	margin-left: 30px;
+}
+
+header {
+	margin-bottom: 10%;
+	border-color: grey;
+	border-width: 2px;
+}
+
+main {
+	margin-bottom: 40px;
+	border-style: solid none none none;
+	border-color: grey;
+	border-width: 2px;
+	margin-top: 20px;
+}
+
+footer {
+	border-style: solid none none none;
+	border-color: grey;
+	border-width: 2px;
+}
+
+footer address {
+	margin-top: 60px;
+}
+
+/* Desktop View */
+.static-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	/*height: 100px;*/
+}
+
+.static-nav nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 65%;
+	height: 70px;
+}
+
+.static-nav nav a {
+	text-decoration: none;
+	color: darkgrey;
+}
+
+/* tablet View */
+@media(max-width: 800px) {
+	.static-nav {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.static-nav nav {
+		width: 100%;
+	}
+}
+
+/* phone view */
+@media(max-width: 500px) {
+	.static-nav nav {
+		height: 300px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		flex-direction: column;
+		align-items: center;
+		align-items: space-evenly;
+	}
+
+	.static-nav nav a {
+		width: 100%;
+		height: 10%;
+		border-bottom-style: solid;
+		border-bottom-color: darkgrey;
+		border-bottom-width: 1px;
+		text-align: center;
+	}
+}
+
+/* Desktop view */
+.idea-logo {
+	margin-top: 2%;
+}
+
+/* phone view */
+@media(max-width: 500px) {
+	.idea-logo {
+		width: 100%;
+		height: 80px;
+		border-bottom-style: solid;
+		border-bottom-color: darkgrey;
+		border-bottom-width: 1px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* Desktop View */
+header div.slogan-upper {
+	width: 100%;
+	margin-top: 5%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+header div.slogan {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+.tab {
+	text-indent: 70px;
+}
+
+
+header div.slogan h1 {
+	font-size: 5em;
+	font-style: bold;
+	/*margin-right: 50px;*/
+}
+
+div.logo-image {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+/* tablet view */
+@media (max-width: 800px) {
+	div.logo-image {
+		display: none;
+	}
+
+	div.slogan-upper {
+		justify-content: center;
+	}
+
+	div.slogan {
+		margin-right: 60px;
+	}
+}
+
+/* phone view */
+@media (max-width: 500px) {
+	div.slogan {
+		margin-right: 20px;
+	}
+	div.slogan-upper {
+		justify-content: center;
+	}
+	header div.slogan h1 {
+		font-size: 50px;
+	}
+}
+
+/* Desktop View */
+
+.upper {
+	display: inline-block;
+	width: 45%;
+	height: 110px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+	margin-top: 20px;
+}
+
+/* phone View */
+@media(max-width: 500px) {
+	.upper {
+		width: 95%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/* Desktop View */
+.middle-image img {
+	width: 100%;
+	height: 25%;
+
+	margin-top: 20px;
+}
+
+.lower {
+	display: inline-block;
+	width: 30%;
+	height: 130px;
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+
+/* Phone View */
+@media(max-width: 500px) {
+	.lower {
+		width: 95%;
+
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+footer p {
+	text-align: center;
+}
+
+/* services.html */
+
+.main-flex-container {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header-content {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-around;
+	margin: 20px 0 20px 0;
+
+	height: 360px;
+	width: 880px;
+	border-bottom-color: darkgrey;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+
+@media(max-width: 860px) {
+	.header-content {
+		width: 100%;
+		height: 30%;
+	}
+
+	.divider-image img {
+		width: 100%;
+		height: 50%;
+	}
+
+	.header-box {
+		width: 100%;
+		height: 50%;
+
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+.services-content {
+	width: 95%;
+	height: 700px;
+	margin: 0 2.5% 0 2.5%;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-around;
+	justify-content: space-around;
+} 
+
+.main-content {
+	height: 200px;
+	width: 370px;
+	border: 1px solid black;
+	background: lightgrey;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.main-content h3 {
+	margin: 5px 5px 5px 5px;
+}
+
+.main-content p {
+	margin: 5px 5px 10px 5px;
+}
+
+@media(max-width: 860px) {
+	.services-content {
+		height: 80%;
+		margin-bottom: 10px;
+	}
+	.main-content {
+		width: 98%;
+		height: 20%;
+
+		margin-bottom: 10px;
+	}
+
+	.main-content button {
+		height: 35px;
+		width: 85px;
+		margin-bottom: 10px;
+	}
+}
+
+.footer-content {
+	display: flex;
+
+	height: 300px;
+	width: 880px;
+	margin-top: 10px;
+
+	border-top-style: solid;
+	border-top-color: lightgrey;
+	border-top-width: 2px;
+}
+
+
+
+
+
+
+
 
 
